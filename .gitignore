@@ -1,0 +1,11 @@
+dist
+node_modules
+.env
+.env.local
+env.json
+min
+out
+push.sh
+.yarn/cache
+test/env.ts
+.env
