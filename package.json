@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "main": "index.ts",
     "license": "MIT",
-    "packageManager": "yarn@3.2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/opendocs-editor/fonts-api"
