@@ -61,7 +61,7 @@ export class FontList {
     }
 }
 
-const GoogleFontLibrary = async (key: string): Promise<FontList> => {
+export const GoogleFontLibrary = async (key: string): Promise<FontList> => {
     const res = await axios.get(`${BASEURL}/webfonts?key=${key}`);
     return new FontList(res.data);
 };
