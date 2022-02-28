@@ -34,5 +34,19 @@
         "fix": "eslint . --ext .ts --fix",
         "start:prod": "yarn build && node dist/index.js",
         "prepublish": "yarn format && yarn fix && yarn clean && tsc -p ."
-    }
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist",
+        "node_modules",
+        "scripts",
+        "src",
+        ".eslint*",
+        ".prettier*",
+        "package.json",
+        "tsconfig.json",
+        "yarn.lock"
+    ]
 }
