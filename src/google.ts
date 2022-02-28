@@ -45,8 +45,8 @@ export class FontList {
     names() {
         const names: string[] = [];
         this.items.forEach((font) => {
-            if (!names.includes(font.family.replace(/\s/gm, "")))
-                names.push(font.family.replace(/\s/gm, ""));
+            if (!names.includes(font.family.replace(/\s/gm, "+")))
+                names.push(font.family.replace(/\s/gm, "+"));
         });
         return names;
     }
@@ -54,7 +54,7 @@ export class FontList {
     byName(name: string): Font | null {
         for (let i = 0; i < this.items.length; i++) {
             const item = this.items[i];
-            if (item.family.replace(/\s/gm, "").toLowerCase() == name)
+            if (item.family.replace(/\s/gm, "+").toLowerCase() == name)
                 return item;
         }
         return null;
